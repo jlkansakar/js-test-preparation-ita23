@@ -7,10 +7,13 @@
  * const myBook = createBook();
  * console.log(myBook.title); // Outputs the title of the book
  */
-function createBook() {
-
+function CreateBook(title, author, year) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+    return myBook = new CreateBook("The Hunger Games", "Suzanne Collins", "2012")
 }
-
+CreateBook()
 
 /**
  * This function finds a book by its author from a given array of books.

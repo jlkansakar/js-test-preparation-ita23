@@ -10,9 +10,16 @@
  */
 
 function getNextEven(n) {
+    if (n % 2 === 0) {
+        return n + 2
+    }
+        if (n % 2 !== 0) {
+            return n + 1
+    }
 
 }
 
+console.log(getNextEven(23));
 
 /**
  * This function checks if a number is a multiple of another number.
@@ -27,9 +34,16 @@ function getNextEven(n) {
  */
 
 function isMultipleOf(n, m) {
-
+    if (n % m === 0) {
+        return true
+    }
+    if (n % m !== 0) {
+        return false
+    }
 }
 
+console.log(isMultipleOf(10,2));
+console.log(isMultipleOf(10, 3))
 
 /**
  * This function reverses a string.
@@ -43,5 +57,10 @@ function isMultipleOf(n, m) {
  */
 
 function reverseString(str) {
-
+    const stringSplit = str.split("")
+    const reverseSplit = stringSplit.reverse()
+    return reverseSplit.join("");
 }
+
+console.log(reverseString("okidokie"));
+

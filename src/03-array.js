@@ -9,9 +9,10 @@
  * console.log(lastElement); // 20
  */
 function getLastElement(array) {
-
+    return array[array.length - 1]
 }
 
+console.log(getLastElement([2, 4, 6, 8, 10, 12, 14, 16, 18, 20]));
 
 /**
  * This function returns an array of even numbers from the specified start to finish.
@@ -26,8 +27,14 @@ function getLastElement(array) {
  */
 function returnEvenNumbers(start, finish) {
 
+    for (let i = start; i < finish; i++) {
+        let evenArray = [];
+        evenArray.push(i)
+    }
 }
 
+
+console.log(returnEvenNumbers(2, 20));
 
 /**
  * This function returns a new array with the square of each number from the input array.
@@ -40,7 +47,7 @@ function returnEvenNumbers(start, finish) {
  * const anotherSquares = squareArray([-1, -2, 3]); // anotherSquares will be [1, 4, 9]
  */
 function squareArray(array) {
-
+    return array.map((x) => x * x)
 }
 
 /**
@@ -54,5 +61,5 @@ function squareArray(array) {
  * const anotherMax = findMax([-1, -2, 3]); // anotherMax will be 3
  */
 function findMax(array) {
-
+    return Math.max.apply(Math, array)
 }
