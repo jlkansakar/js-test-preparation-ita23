@@ -26,11 +26,16 @@ console.log(getLastElement([2, 4, 6, 8, 10, 12, 14, 16, 18, 20]));
  * // numbers will be [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
  */
 function returnEvenNumbers(start, finish) {
+    let evenArray = [];
+    let newArray = [];
+    for (let i = 0; i < finish; i++) {
+        evenArray.push[i]
+        if (evenArray[i] % 2 === 0) {
+            newArray.push[i]
+        }
 
-    for (let i = start; i < finish; i++) {
-        let evenArray = [];
-        evenArray.push(i)
     }
+
 }
 
 

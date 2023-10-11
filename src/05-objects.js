@@ -11,11 +11,11 @@ function CreateBook(title, author, year) {
     this.title = title;
     this.author = author;
     this.year = year;
-    return myBook = new CreateBook("The Hunger Games", "Suzanne Collins", "2012")
 }
-CreateBook()
-
-/**
+const myBook = new CreateBook("The Hunger Games", "Suzanne Collins", 2012)
+console.log(myBook);
+/*
+*
  * This function finds a book by its author from a given array of books.
  *
  * @param {array} books - An array of book objects.
@@ -27,9 +27,18 @@ CreateBook()
  * console.log(result); // Outputs {title: "Sample", author: "John Doe", year: 2020}
  */
 function findBookByAuthor(books, author) {
-
+    books.forEach((book) => {
+        if (books.author === author) {
+            return book
+        }
+        else {
+            return null
+        }
+    })
+    return
 }
-
+const result = findBookByAuthor([{title: "Sample", author: "John Doe", year: 2020}, {title: "Here I am", author: "Peter Hansen", year: 1987}], "John Doe");
+console.log(result);
 
 /**
  * This function lists all book titles published before a given year.
